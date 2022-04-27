@@ -1,0 +1,45 @@
+$ python Customer.py 
+Customer 12 is at station 3 and has destination 7
+$ python Tram.py 
+The Tram is currently at station 1 out of 3
+The Tram is currently at station 2 out of 3
+$ python Park.py 
+
+
+------------------------------------------------------------
+ Station                  Customer                   Tram   
+------------------------------------------------------------
+    3                        2                    
+------------------------------------------------------------
+    2                                             
+------------------------------------------------------------
+    1                        1                       *T*    
+------------------------------------------------------------
+
+$ python
+>> import Customer
+>> C = Customer.Customer(7, 2, 1)
+>> print(C)
+Customer 1 is at station 7 and has destination 2
+>> import Tram
+>> T = Tram.Tram(12)
+>> print(T)
+The Tram is currently at station 1 out of 12
+>> T.move()
+>> print(T)
+The Tram is currently at station 2 out of 12
+>> P = Park.Park(3, [[1, 2], [3, 1]])
+>> print(P)
+
+
+------------------------------------------------------------
+ Station                  Customer                   Tram   
+------------------------------------------------------------
+    3                        2                    
+------------------------------------------------------------
+    2                                             
+------------------------------------------------------------
+    1                        1                       *T*    
+------------------------------------------------------------
+
+>>> 
